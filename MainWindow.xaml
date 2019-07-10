@@ -1,0 +1,31 @@
+﻿<Window x:Class="WPFParallelCodes.MainWindow"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+Title="MainWindow" Height="427" Width="566" WindowState="Normal">
+    <Canvas  HorizontalAlignment="Right" Width="544" Margin="0,10,2,0">
+
+        <Button Name="btnFill" Content="Получить данные" MaxWidth="200" Click="btnFill_Click_1" Canvas.Left="281" Canvas.Top="10"/>
+        <DataGrid AutoGenerateColumns="True" x:Name="myDataGrid" Height="203" Canvas.Left="10" Width="251" Canvas.Top="10"/>
+        <TextBox x:Name="Name" Height="23" Canvas.Left="10" TextWrapping="Wrap"  Canvas.Top="238" Width="120"/>
+
+        <TextBox x:Name="Date" Height="23" Canvas.Left="290" TextWrapping="Wrap" Text="Дата" Canvas.Top="238" Width="120"/>
+        <TextBox x:Name="Summa" Height="23" Canvas.Left="153" TextWrapping="Wrap" Text="Сумма" Canvas.Top="238" Width="120"/>
+        <Button Content="Добавить" Canvas.Left="424" Canvas.Top="241" Width="75" Click="Button_Click"/>
+        <TextBox x:Name="Name_Copy" Height="23" Canvas.Left="10" TextWrapping="Wrap" Text="Имя" Canvas.Top="307" Width="120"/>
+        <TextBox x:Name="Summa_Copy" Height="23" Canvas.Left="153" TextWrapping="Wrap" Text="Сумма" Canvas.Top="307" Width="120"/>
+        <TextBox x:Name="Date_Copy" Height="23" Canvas.Left="290" TextWrapping="Wrap" Text="Дата" Canvas.Top="307" Width="120"/>
+        <Button Content="Изменить" Canvas.Left="424" Canvas.Top="307" Width="75" Click="Button_Click1"/>
+        <TextBox x:Name="Id1" Height="23" Canvas.Left="30" TextWrapping="Wrap" Canvas.Top="279" Width="120"/>
+        <Label Content="id" Canvas.Left="10" Canvas.Top="277" Height="25"/>
+        <Label Content="Label" Canvas.Left="10" Canvas.Top="350" Visibility="Hidden"/>
+        <Label Content="Label" Canvas.Left="85" Canvas.Top="424"/>
+        <Button Content="Удалить" Canvas.Left="153" Canvas.Top="353" Width="75" Click="Button_Click_3"/>
+        <TextBox x:Name="ID" Height="23" Canvas.Left="10" TextWrapping="Wrap" Canvas.Top="350" Width="120"/>
+        <Button Content="сумма всех счетов" Canvas.Left="281" Canvas.Top="63" Width="110" Height="25" Click="Button_Click_4"/>
+        <TextBlock Canvas.Left="424" TextWrapping="Wrap" Canvas.Top="67"/>
+        <TextBox x:Name="summa" Height="23" Canvas.Left="406" TextWrapping="Wrap" Canvas.Top="65" Width="83"/>
+        <TextBlock Canvas.Left="281" TextWrapping="Wrap" Text="Search" Canvas.Top="143" Width="94"/>
+    </Canvas>
+
+
+</Window>
